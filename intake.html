@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMF Sandbox - Intake Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Scholar Intake Form</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="intake.html">Intake Form</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <form name="scholar-intake" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="scholar-intake">
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required placeholder="John Doe"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+            <label for="message">Why are you joining TMF?</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Type your response here..."></textarea><br><br>
+
+            <button type="submit">Submit Intake Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Sandbox only — Fake data recommended</p>
+    </footer>
+</body>
+</html>
