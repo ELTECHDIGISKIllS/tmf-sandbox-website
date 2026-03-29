@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMF Sandbox - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact the Sandbox Administrator</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="intake.html">Intake Form</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <p>This is a simulation. In a real scenario, this would connect to an internal helpdesk.</p>
+        
+        <form name="contact-form" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact-form">
+            
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>TMF Sandbox Environment</p>
+    </footer>
+</body>
+</html>
